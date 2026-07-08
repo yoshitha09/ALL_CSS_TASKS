@@ -6,23 +6,112 @@
     <title>DAILY TIMES</title>
     <style>
         #box1{
-            background-color:blue;
+            background-color:darkblue;
             color:white;
             font-family: 'Times New Roman', Times, serif;
         }
         #par1{
            text-transform: capitalize;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #form1{
+            color:black;
+            background-color: blue;
+             text-transform:uppercase;
+           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        a{
+            text-decoration-line: none;
+            color:white;
         }
     </style>
 </head>
-<body align="center">
+<body>
     <div id="box1"><h1>DAILY TIMES</h1>
       <p id="par1">your daily dose of trusted news</p> 
     </div>
-    <form>
+    <form id="form1">
         <fieldset>
-  
+            <nav>
+               <a href="#Breaking news">Breaking news</a> | <a href="#National">National</a> | <a href="#technology">technology</a> | <a href="#sports"><div id="box4"></a> |
+                 <a href="#entertainment">entertainment</a> | <a href="#editorial">editorial</a> | <a href="#contact">contact</a>
+            </nav>
         </fieldset>
     </form>
+    <div id="box2">
+        <h2 id="Breaking news">Breaking news</h2>
+        <h3 id="news1">Heavy Rainfall Alert Across Major Cities</h3>
+        <p id="par2">The weather department has issued an orange alert for several districts due to continuous rainfall. Authorities have advised to avoid unnecessary travel and sty updated with offical announcements throughout the day.</p>
+        <p id="par3">Emergency response teams have been deployed in flood-prone areas to assist residents and monitor water levels.</p>     
+    </div>
+    <hr>
+    <div id="box3">
+        <h2 id="National">National news</h2>
+        <h3 id="news2">New eduation policy introduction</h3>
+        <p id="par4"></p>
+        <h3 id="news3">healthcare awareness program</h3>
+        <p id="par5"></p>
+    </div>
+    <hr>
+    <div id="box4">
+        <h2 id="technology">technology</h2>
+        <h3 id="news4">Artificial intelligence shpes the future</h3>
+        <p id="par6"></p>
+        <h3 id="news5">Cloud computing contiues to grow</h3>
+        <p id="par7"></p>
+    </div>
+    <hr>
+    <div id="box5">
+        <h2 id="sports">sports</h2>
+        <h3 id="news6">Netional championship begins</h3>
+        <p id="par8"></p>
+        <h3 id="news7">young players impress coaches</h3>
+        <p id="par9"></p>
+    </div>
+    <hr>
+    <div id="box6">
+        <h2 id="entertainment">entertainment</h2>
+        <h3 id="news8">Summer filim festival opens</h3>
+        <p id="par10"></p>
+        <h3 id="news9">music festival attracts thousands</h3>
+        <p id="par11"></p>
+    </div>
+    <hr>
+     <div id="box7">
+        <h2 id="editorial">editorial</h2>
+        <h3 id="news10">the importance of reading newspaper</h3>
+        <p id="par12"></p>
+        <h3 id="news11">"Knowledge grows when cuisity becoms a daily habit"</h3>
+        <p id="par13"></p>
+    </div>
+    <hr>
+    <form id="form2">
+        <fieldset id="par13">
+            <h2 id="contact">contact</h2>
+              <p id="par14"><b>Email:</b>yoshi@gmail.com<br>
+                  <b>Phone:</b>+91 987654210<br>
+                  <b>Address:</b>Nellore
+            </p>
+            <h2 id="head">Subscribe to our newsletter</h2>
+            <label>Full Name</label><br>
+            <input type="text" name="name" placeholder="Enter your name">
+            <label>Email Address</label><br>
+            <input type="email" name="email" placeholder="Enter your email">
+            <label>Select Category</label><br>
+            <select>
+                <option value="Breaking news">Breaking news</option>
+                <option value="National">National</option>
+            </select>
+            <label>Comments</label><br>
+            <textarea rows="5" cols="10"></textarea>
+            <input type="button" value="Subscribe">
+            <input typs="button" value="Clear">
+        </fieldset>
+    </form>
+    <hr>
+    <div id="box8">
+        © 2026 daily times. all rights reserved.<br>
+        designed for CSS typograpy assignment
+    </div>
 </body>
 </html>
