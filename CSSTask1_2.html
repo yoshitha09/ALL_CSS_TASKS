@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo using InternalCSS using selectors and color system (rgb,hsl and hex  color systems)</title>
+    <style>
+        h1{
+            background-color:rgb(0, 255, 195);
+            color:rgb(162, 0, 255);
+        }
+        #heading{
+            background-color:rgb(255,255,0);
+            color:rgb(255, 0, 221);
+        }
+        *{
+             background-color:rgb(255, 162, 0);
+        }
+        #td1{
+            background-color:rgb(255,0,0);
+        }
+        .tables{
+             background-color:rgb(255,255,255);
+        }
+        .redcolor{
+              background-color:#ff0000;
+        }
+        .greencolor{
+              background-color:#00ff00;
+        }
+        .yellowcolor{
+              background-color:hsl(60,100%,50%);
+        }
+        .bluecolor{
+              background-color:hsl(240,100%,50%);
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Ludo using InternalCSS using selectors and color system (rgb,hsl and hex)</h1>
+     <table border="1" bordercolor="black" cellspacing="0" cellpadding="10" align="center" >
+    <caption><h2 id="heading">Ludo Kings</h2></caption>
+    <tr>
+        <td colspan="3" rowspan="3" class="redcolor">
+            <table cellspacing="15" cellpadding="30" border="1" bordercolor="black" align="center" class="tables">
+               <tr>
+                <td class="redcolor"></td>
+                <td class="redcolor"></td>
+               </tr>
+               <tr>
+                <td class="redcolor"></td>
+                <td class="redcolor"></td>
+               </tr>
+            </table>
+        </td>
+        <!-- <td></td>
+        <td></td> -->
+        <td class="tables"></td>
+        <td class="greencolor"></td>
+        <td class="tables"></td>
+        <td colspan="3" rowspan="3" class="greencolor" >
+            <table cellspacing="15" cellpadding="30" border="1" bordercolor="black" align="center" class="tables">
+               <tr>
+                <td class="greencolor"></td>
+                <td class="greencolor"></td>
+               </tr>
+               <tr>
+                <td class="greencolor"></td>
+                <td class="greencolor"></td>
+               </tr>
+            </table>
+        </td>
+        <!-- <td></td>
+        <td></td> -->
+    </tr>
+     <tr>
+        <!-- <td></td> 
+        <td></td>
+        <td></td>-->
+        <td class="tables"></td>
+        <td class="greencolor"></td>
+        <td class="tables"></td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+    </tr>
+     <tr >
+        <!-- <td></td> 
+        <td></td>
+        <td></td>-->
+        <td class="greencolor"></td>
+        <td class="greencolor"></td>
+        <td class="greencolor"></td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+    </tr>
+         <tr>
+       
+        <td class="tables"></td>
+        <td class="tables"></td>
+        <td class="redcolor"></td>
+        <td colspan="3" rowspan="3" class="tables">
+            <table  cellspacing="0" cellpadding="30" border="1" bordercolor="black" align="center" class="tables">
+               <tr >
+                <td class="redcolor"></td>
+                <td class="greencolor"></td>
+               </tr>
+               <tr>
+                <td class="yellowcolor"></td>
+                <td class="bluecolor"></td>
+               </tr>
+            </table>
+        </td>
+        <!-- <td></td>
+        <td></td> -->
+        <td class="bluecolor"></td>
+        <td class="tables"></td>
+        <td class="tables"></td>
+    </tr>
+     <tr>
+        <td class="redcolor"></td>
+        <td class="redcolor"></td>
+        <td class="redcolor"></td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+        <td class="bluecolor"></td>
+        <td class="bluecolor"></td>
+        <td class="bluecolor"></td>
+    </tr>
+
+     <tr>
+        <td class="tables"></td>
+        <td class="tables"></td>
+        <td class="redcolor"></td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+        <td class="bluecolor"></td>
+        <td class="tables"></td>
+        <td class="tables"></td>
+    </tr>
+     <tr>
+        <td colspan="3" rowspan="3" class="yellowcolor">
+            <table  cellspacing="15" cellpadding="30" border="1" bordercolor="black" align="center" class="tables">
+               <tr>
+                <td class="yellowcolor"></td>
+                <td class="yellowcolor"></td>
+               </tr>
+               <tr>
+                <td class="yellowcolor"></td>
+                <td class="yellowcolor"></td>
+               </tr>
+            </table>
+        </td>
+        <!-- <td></td>
+        <td></td> -->
+        <td class="yellowcolor"></td>
+        <td class="yellowcolor"></td>
+        <td class="yellowcolor"></td>
+        <td colspan="3" rowspan="3" class="bluecolor">
+            <table  cellspacing="15" cellpadding="30" border="1" bordercolor="black" align="center" class="tables">
+               <tr>
+                <td class="bluecolor"></td>
+                <td class="bluecolor"></td>
+               </tr>
+               <tr>
+                <td class="bluecolor"></td>
+                <td class="bluecolor"></td>
+               </tr>
+            </table>
+        </td>
+        <!-- <td></td>
+        <td></td> -->
+    </tr>
+     <tr>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+        <td class="tables"></td>
+        <td class="yellowcolor"></td>
+        <td class="tables"></td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+    </tr>
+     <tr>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+        <td class="tables"></td>
+        <td class="yellowcolor"></td>
+        <td class="tables"></td>
+        <!-- <td></td>
+        <td></td>
+        <td></td> -->
+    </tr>
+</table>
+</body>
+</html>
