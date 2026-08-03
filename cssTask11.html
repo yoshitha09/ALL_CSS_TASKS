@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader Showcase Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+.container{
+    display:grid;
+}
+
+.card{
+    height:320px;
+    border:1px solid #2b2b2b;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.loader{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.chat{
+    width:110px;
+    height:70px;
+    background:#fff;
+    border-radius:48%;
+    position:relative;
+}
+.chat::before{
+    content:"";
+    position:absolute;  
+    left:-5px;
+    bottom:-5px;
+    border:20px solid transparent;
+    border-top-color:#fff;
+    transform: rotate(160deg);
+}
+.chat span{
+    width:12px;
+    height:12px;
+    margin:0 5px;
+    background:#ff8f6b;
+    border-radius:50%;
+    animation: fade-in-out  .5s infinite reverse;
+}
+.chat span:nth-child(2){
+    animation-delay:.2s;
+}
+.chat span:nth-child(3){
+    animation-delay:.4s;
+}
+@keyframes fade-in-out{
+    to{
+        opacity:.3;
+        transform:scale(.9);
+    }
+}
+
+
+.braces{
+    font-size:90px;
+    color:#ddd;
+}
+.braces span{
+    animation: fade-in-out  .5s infinite alternate;
+}
+.braces span:nth-child(2){
+    animation-delay:.2s;
+}
+.braces span:nth-child(3){
+    animation-delay:.4s;
+}
+
+
+
+
+.music{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.music span{
+    width:8px;
+    height:20px;
+    background:#ff0088;
+    animation:music .5s linear infinite alternate;
+}
+
+.music span:nth-child(1){
+    animation-delay:.1s;
+    background:#0ccf3d;
+}
+.music span:nth-child(2){
+    animation-delay:.2s;
+    background:#00d5ff;
+}
+
+.music span:nth-child(3){
+    animation-delay:.3s;
+    background:#ffee00;
+}
+
+.music span:nth-child(4){
+    animation-delay:.4s;
+    background:#ff8800;
+}
+
+.music span:nth-child(5){
+    animation-delay:.5s;
+    background:#9900ff;
+}
+.music span:nth-child(5){
+    animation-delay:.6s;
+    background: #ff0000;
+}
+
+@keyframes music{
+    0%{
+        height:1px;
+    }
+    50%{
+        height:50px;
+    }
+
+}
+
+
+.dots{
+    display:flex;
+    gap:12px;
+}
+
+.dots span{
+    width:16px;
+    height:16px;
+    background:#fff;
+    border-radius:50%;
+    animation:fade 2s infinite;
+}
+
+.dots span:nth-child(2){
+    animation-delay:.4s;
+}
+
+.dots span:nth-child(3){
+    animation-delay:.6s;
+}
+
+@keyframes fade{
+    50%{
+        opacity:.2;
+        transform:scale(.1);
+    }
+}
+
+
+.spinner{
+    width:90px;
+    height:90px;
+    border:5px solid #0f0;
+    border-radius:50%;
+    border-top-color: transparent ;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+.hacker{
+    position:relative;
+    font-size:42px;
+    font-weight:bold;
+    color:#fff;
+    letter-spacing:4px;
+}
+
+.hacker::before,
+.hacker::after{
+    content:attr(data-text);
+    position:absolute;
+    left:0;
+}
+
+.hacker::before{
+    color:#00ffff;
+    animation:hacker1 .4s infinite;
+}
+
+.hacker::after{
+    color:#ff00ff;
+    animation:hacker2 .4s infinite;
+}
+
+@keyframes hacker1{
+    50%{
+        transform:translate(-3px,-2px);
+    }
+}
+
+@keyframes hacker2{
+    50%{
+        transform:translate(3px,2px);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <!-- Chat Loader -->
+    <div class="card">
+        <h2>Message Loader</h2>
+        <div class="loader chat">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Code Loader -->
+    <div class="card">
+        <h2>Code Loader</h2>
+        <div class="loader braces">
+            <span>{</span>
+            <span>}</span>
+        </div>
+    </div>
+
+    <!-- Music Loader -->
+    <div class="card">
+        <h2>Music Loader</h2>
+        <div class="music">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Three Dots -->
+    <div class="card">
+        <h2>3 Dots Loader</h2>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Spinner -->
+    <div class="card">
+        <h2>Circle Loader</h2>
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Glitch -->
+    <div class="card">
+        <h2>Hacker Loader</h2>
+        <div class="hacker" data-text="LOADING">
+            LOADING
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
