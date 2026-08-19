@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .box{
+           perspective: 1000px;
+        }
+        .cube{
+            height: 200px;
+            width:200px;
+            transform-style: preserve-3d;
+            position: relative;
+            animation: rotateCube 6s linear infinite;
+          
+        }
+        .front,.back,.left,.right,.top,.bottom{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+             border: 2px solid white;
+
+        }
+        @keyframes rotateCube{
+            from{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+        .front{
+             background-color: red;
+             transform:  translateZ(100px);    
+             
+        }
+        .back{
+            background-color:gold ;
+            transform: rotateY(180deg) translateZ(100px);
+             
+        }
+        .left{
+            background-color: green;
+            transform: rotateY(-90deg) translateZ(100px);
+             
+        }
+        .right{
+            background-color: blue;
+            transform: rotateY(90deg) translateZ(100px);
+             
+        }
+        .top{
+            background-color: pink;
+            transform: rotateX(90deg) translateZ(100px);
+             
+        }
+        .bottom{
+            background-color: magenta;
+            transform: rotateX(-90deg) translateZ(100px);
+             
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="cube">
+    <div class="front">Front</div>
+    <div class="back">Back</div>
+    <div class="left">Left</div>
+    <div class="right">Right</div>
+    <div class="top">Top</div>
+    <div class="bottom">Bottom</div>
+    </div>
+    </div>
+</body>
+</html>

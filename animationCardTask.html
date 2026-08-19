@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            color: white;
+            height: 100vh;
+            
+        }
+        .box{
+            height: 200px;
+            width: 170px;
+            perspective: 1000px;
+           
+        }
+        
+        .inner-card{
+            height: 100%;
+            width:100%;
+            position: relative;
+            transition:transform 0.8s;
+            transform-style: preserve-3d;
+        }
+         .box1:hover .inner-card{ 
+            transform: rotateX(180deg);
+        }
+        .front,.back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+             border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            backface-visibility: hidden;
+        }
+        .front{
+            background: red;
+        }
+        .back{
+            background-color: green;
+            transform: rotateX(180deg);
+        }
+        .inner-card2{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transition: transform 0.8s;
+            transform-style: preserve-3d; 
+           
+        }
+        .box2:hover .inner-card2{
+            transform: rotateY(180deg);
+        }
+        .front1,.back1{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            backface-visibility: hidden;
+           
+        }
+        .front1{
+            background: #007DCC ;
+        }
+        .back1{
+            background-color: gold;
+            transform: rotateY(180deg);
+        }
+        @keyframes card3{
+            from{
+                transform: rotateX(0deg);
+            }
+            to{
+                transform: rotateX(180deg);
+            }
+        }
+        .inner-card3{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: card3 2s ease infinite alternate;
+        }
+        .box3 .inner-card{
+            transform: rotateX(180deg);
+        }
+        .front2,.back2{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            backface-visibility: hidden;
+
+        }
+        .front2{
+            background: indigo;
+        }
+        .back2{
+            background: seagreen;
+            transform: rotateX(180deg);
+            
+        }
+        @keyframes card4{
+            from{
+                transform: rotateY(0deg);
+            }
+            to{
+                transform: rotateY(180deg);
+            }
+        }
+        .inner-card4{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            
+            transform-style: preserve-3d;
+            animation: card4 2s  ease infinite alternate ;
+        }
+        .front3,.back3{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            backface-visibility: hidden;
+        }
+        .front3{
+            background-color: brown;
+        }
+        .back3{
+            background-color: #F62477;
+            transform: rotateY(180deg);
+        }
+        
+    </style>
+</head> 
+<body>
+    <div class="box box1">
+        <div class="inner-card">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+        </div>
+    <div class="box box2">
+        <div class="inner-card2">
+            <div class="front1">
+                Front
+            </div>
+            <div class="back1">
+                  Back
+            </div>
+        </div>
+    </div>
+    <div class="box box3">
+        <div class="inner-card3">
+            <div class="front2">Front</div>
+            <div class="back2">Back</div>
+        </div>
+    </div>
+    <div class="box box4">
+        <div class="inner-card4">
+            <div class="front3">Front</div>
+            <div class="back3">Back</div>
+
+        </div>
+    </div>
+</body>
+</html>

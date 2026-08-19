@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Hub</title>
+    <style>
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+      body{
+           height: 100%;
+            width: 100vw;
+            color: white;
+           /* background:linear-gradient(rgb(14, 14, 93),rgb(64, 64, 149),black,black); */
+           background-color:rgb(0, 0, 0);
+            font-family:sans-serif;
+      }
+      main{
+        width: 100vw;
+        height: 100vh;
+      } 
+       li{
+         padding-bottom: 2%;
+         width: 100%;
+         text-align: center;
+      }
+      
+      iframe{
+        width: 100%;
+        height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      nav{
+        padding-top: 1%;
+      }
+      header{
+        width: 100vw;
+        padding: 0 0% 1% 0%;
+        background-color: black;
+      }
+      h1{
+        color: rgb(167, 102, 221);
+        text-shadow: 2px 2px 10px 5px rgb(110, 101, 119);
+      }
+      .heading{
+        width: 100%;
+        text-align: center;
+      }
+      a{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+      }
+      a:hover{
+       
+        background-color: rgb(41, 12, 70);
+        border-radius: 5px;
+      }
+      footer{      
+        background-color:rgb(0, 0, 0);
+       height: auto;
+       margin-top: -3%;
+        margin-bottom: -10%;
+      }
+      marquee{
+         width: 100%;
+         height: 100%;
+         background-color: black;
+      }
+      @media(min-width:720px){
+         ul{
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+       
+       
+      }
+       li{
+         padding-bottom: 2%;
+         width: auto;
+        
+         background-color: black;
+      }
+      a{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+      }
+       i{
+        margin-right: -47%;
+      }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>CSS TASKS</h1>
+        </div>
+        <div>
+            <nav>
+            <ul type="none" >
+                <li><a href="ludo/CSSTask1.html" target="mainContent">Inline CSS</a></li>
+                <li><a  href="ludo/CSSTask1_2.html" target="mainContent">Internal CSS</a></li>
+                <li><a href="ludo/CSSTask1_3.html" target="mainContent">External CSS</a></li>
+                <li><a href="boxTask.html" target="mainContent">Box Task</a></li>
+                <li><a href="BoxOffice_Pick.html" target="mainContent">BoxOffice Pick</a></li>
+                <li><a  href="FAVOURITE_MOVIES.html" target="mainContent">Favourite Movies</a></li>
+                <li><a  href="movie_APP.html" target="mainContent">Movie App</a></li>
+                <li><a href="Movies.html" target="mainContent">Movie Task</a></li>
+                <li><a href="News.html" target="mainContent">Daily News</a></li>
+                <li><a href="conic_gradientTask.html" target="mainContent">Gradient</a></li>
+                <li><a href="Invitation.html" target="mainContent">Invitation</a></li>
+                <li><a  href="Beach_Theme.html" target="mainContent">Beach Theme</a></li>
+                <li><a href="MOON_PHASES.html" target="mainContent">Moon Phases</a></li>
+                <li><a href="Loader.html" target="mainContent">Loader</a></li>
+                <li><a href="animationCardTask.html" target="mainContent">Card Task</a></li>
+                <li><a  href="animationcubetask.html" target="mainContent">cube task</a></li>
+            </ul>
+           
+        </nav>
+        </div>
+       
+    </header>
+    <main>
+        <iframe src="ludo/CSSTask1.html" name="mainContent" frameborder="0"></iframe>
+    </main> 
+    <footer>
+     
+     <marquee behavior="alternate" style="font-size:20px ;">&copy;2026 CSS Tasks. All rights reserved.</marquee> 
+   
+    </footer>
+</body>
+</html>
